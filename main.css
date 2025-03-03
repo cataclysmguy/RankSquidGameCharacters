@@ -1,4 +1,4 @@
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 1200px) {
 
 body {
     background-color: rgb(85, 114, 175);
@@ -115,7 +115,7 @@ h1 {
     text-align: center;
 }
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1199px) {
     body {
         background-color: rgb(85, 114, 175);
         margin: 0.4rem;
@@ -194,7 +194,7 @@ h1 {
     }
     
     .selected-img {
-        height: 10rem;
+        height: 6rem;
         border-radius: 10px;
     }
     
