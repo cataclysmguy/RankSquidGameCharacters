@@ -8,102 +8,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Figtree:ital,wght@0,300..900;1,300..900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <script type="module" src="main.js"></script>
+        <script type="module" src="game.js"></script>
+        <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+        <script src="https://unpkg.com/vue-router@4.5.0/dist/vue-router.global.js"></script>
     </head>
-    <body>
-        <div class="ranks">
-            <h1 class="w">Rank Squid Game Players</h1>
-            <div class="listwrapper"> 
-            <div class="list">
-                <div class="ranked">
-                <h1 class="rank-p" id="rank1">1.</h1>
-                <button class="img-button">
-                <img src="char/placeholder.png" class="ranked-img">
-                </button>
-                </div>
-            </div>
-            <div class="list">
-                <div class="ranked">
-                <h1 class="rank-p" id="rank2">2.</h1>
-                <button class="img-button">
-                <img src="char/placeholder.png" class="ranked-img">
-                </button>
-                </div>
-            </div>
-            <div class="list">
-                <div class="ranked">
-                <h1 class="rank-p" id="rank3">3.</h1>
-                <button class="img-button">
-                <img src="char/placeholder.png" class="ranked-img">
-                </button>
-                </div>
-            </div>
-            <div class="list">
-                <div class="ranked">
-                <h1 class="rank-p" id="rank4">4.</h1>
-                <button class="img-button">
-                <img src="char/placeholder.png" class="ranked-img">
-                </button>
-                </div>
-            </div>
-            <div class="list">
-                <div class="ranked">
-                <h1 class="rank-p" id="rank5">5.</h1>
-                <button class="img-button">
-                <img src="char/placeholder.png" class="ranked-img">
-                </button>
-                </div>
-            </div>
-            <div class="list">
-                <div class="ranked">
-                <h1 class="rank-p" id="rank6">6.</h1>
-                <button class="img-button">
-                <img src="char/placeholder.png" class="ranked-img">
-                </button>
-                </div>
-            </div>
-            <div class="list">
-                <div class="ranked">
-                <h1 class="rank-p" id="rank7">7.</h1>
-                <button class="img-button">
-                <img src="char/placeholder.png" class="ranked-img">
-                </button>
-                </div>
-            </div>
-            <div class="list">
-                <div class="ranked">
-                <h1 class="rank-p" id="rank8">8.</h1>
-                <button class="img-button">
-                <img src="char/placeholder.png" class="ranked-img">
-                </button>
-                </div>
-            </div>
-            <div class="list">
-                <div class="ranked">
-                <h1 class="rank-p" id="rank9">9.</h1>
-                <button class="img-button">
-                <img src="char/placeholder.png" class="ranked-img">
-                </button>
-                </div>
-            </div>
-            <div class="list">
-                <div class="ranked">
-                <h1 class="rank-p-10" id="rank10">10.</h1>
-                <button class="img-button">
-                <img src="char/placeholder.png" class="ranked-img">
-                </button>
-                </div>
-            </div>
-            </div>
-            <script>
-                function refreshPage(){
-                    window.location.reload();
-                }
-                </script>
-            <div class="selected">
-                <img src="char/placeholder.png" class="selected-img" id="preview">
-                <button id="playagain" onclick="refreshPage()"><h1>Play Again</h1></button>
-            </div>
-        </div>
-        </div>
+    <body id="app">
+        <router-view></router-view>
     </body>
 </html>
