@@ -7,6 +7,10 @@ body {
     justify-content: center;
 }
 
+.mobile-selected-img {
+    visibility: collapse;
+}
+
 .ranks {
     background-color: rgb(48, 69, 156);
     border-radius: 5px;
@@ -122,7 +126,7 @@ h1 {
     .ranks {
         background-color: rgb(48, 69, 156);
         border-radius: 5px;
-        width: 25vw;
+        width: 40vw;
         height: calc(100vh - 2rem);
         justify-content: center;
         display: inline-block;
@@ -137,8 +141,11 @@ h1 {
     }
     
     h1 {
+        padding-top: 0.3rem;
+    }
+
+    .w {
         font-size: 1rem;
-        padding-top: 1rem;
     }
     
     .listwrapper {
@@ -155,7 +162,7 @@ h1 {
     }
     
     .rank-p {
-        font-size: 3.3rem;
+        font-size: 2.5rem;
         width: 3.3rem;
         padding: 0;
         margin: 0;
@@ -174,6 +181,7 @@ h1 {
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
     }
     
     .ranked-p-10 {
@@ -190,7 +198,7 @@ h1 {
     }
     
     .selected-img {
-        height: 15rem;
+        height: 6rem;
         border-radius: 10px;
     }
     
@@ -201,22 +209,12 @@ h1 {
         height: calc(90vh - 2rem);
     }
     
-    #playagain:hover {
-        cursor: pointer;
-    }
     
     .img-button:hover {
         cursor: pointer;
     }
     
     #playagain {
-        border: none;
-        background-color: rgb(23, 34, 77);
-        border-radius: 10px;
-        display: block;
-        float: right;
-        margin-right: 2vw;
-        align-items: center;
-        text-align: center;
+        visibility: collapse;
     }
 }

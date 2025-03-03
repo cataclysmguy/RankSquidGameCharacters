@@ -23,7 +23,6 @@ export default {
         <div class="ranks">
             <h1 class="w">Rank Squid Game Players</h1>
             <button class="playagain" id="playagain"><h1>Play Again</h1></button>
-            <div class="listwrapper">
             <div class="list">
                 <div class="ranked">
                 <h1 class="rank-p" id="rank1">1.</h1>
@@ -107,8 +106,8 @@ export default {
             </div>
             <div class="selected">
             <img src="char/placeholder.png" class="selected-img" id="preview">
+            
             </div>
-        </div>
         </div>
     `,
     mounted() {
