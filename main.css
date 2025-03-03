@@ -149,11 +149,7 @@ h1 {
     }
     
     .listwrapper {
-        display: grid;
-        justify-content: start;
-        position: relative;
-        width: 25vw;
-        float: left;
+        visibility: collapse;
     }
     
     .list {
@@ -198,7 +194,7 @@ h1 {
     }
     
     .selected-img {
-        height: 6rem;
+        height: 10rem;
         border-radius: 10px;
     }
     
